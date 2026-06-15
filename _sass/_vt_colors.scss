@@ -4,6 +4,7 @@
    Burnt Orange:   #E5751F
    ========================================================================== */
 
+/* Global link and accent colors */
 :root {
     --global-base-color                 : #861F41;
     --global-link-color                 : #861F41;
@@ -14,58 +15,61 @@
     --global-footer-bg-color            : #f5edef;
 }
 
-/* Maroon masthead bar */
-.masthead {
+/* ---- Masthead / nav bar ---- */
+/* Hit every element in the nav bar that sets a background */
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,
+.greedy-nav button,
+.masthead__menu-item,
+.masthead__menu-item.selected a,
+ul.visible-links,
+ul.visible-links li {
     background: #861F41 !important;
-
-    &::after {
-        background: #6a1833 !important;
-    }
+    background-color: #861F41 !important;
 }
 
-/* Keep nav items white on maroon background */
-.masthead__menu-item a {
+/* Bottom border accent line */
+.masthead::after {
+    background: #E5751F !important;
+}
+
+/* Nav link text: white, orange on hover */
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.greedy-nav button {
     color: #ffffff !important;
 }
 
-.masthead__menu-item a:hover {
+.greedy-nav a:hover,
+.greedy-nav .visible-links a:hover {
     color: #E5751F !important;
 }
 
-.masthead__menu-item.selected a {
-    color: #ffffff !important;
-    border-bottom-color: #E5751F !important;
+/* Hover underline bar */
+.greedy-nav .visible-links a:before {
+    background: #E5751F !important;
 }
 
-/* Greedy nav (mobile hamburger) */
-.greedy-nav {
-    background: #861F41 !important;
-
-    a {
-        color: #ffffff !important;
-    }
-
-    a:hover {
-        color: #E5751F !important;
-    }
-
-    .visible-links a:before {
-        background: #E5751F !important;
-    }
+/* Hamburger icon */
+.navicon,
+.navicon::before,
+.navicon::after {
+    background: #ffffff !important;
 }
 
-.greedy-nav__toggle {
+/* Mobile/overflow dropdown — keep readable */
+.greedy-nav .hidden-links {
+    background: #6a1833 !important;
+    background-color: #6a1833 !important;
+}
+
+.greedy-nav .hidden-links a {
     color: #ffffff !important;
 }
 
-.hidden-links {
+.greedy-nav .hidden-links a:hover {
+    color: #E5751F !important;
     background: #861F41 !important;
-
-    a {
-        color: #ffffff !important;
-    }
-
-    a:hover {
-        color: #E5751F !important;
-    }
 }

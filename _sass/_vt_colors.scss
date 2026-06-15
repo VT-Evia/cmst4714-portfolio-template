@@ -1,0 +1,71 @@
+/* ==========================================================================
+   VIRGINIA TECH COLOR OVERRIDES
+   Chicago Maroon: #861F41
+   Burnt Orange:   #E5751F
+   ========================================================================== */
+
+:root {
+    --global-base-color                 : #861F41;
+    --global-link-color                 : #861F41;
+    --global-link-color-hover           : #E5751F;
+    --global-link-color-visited         : #6a1833;
+    --global-masthead-link-color        : #ffffff;
+    --global-masthead-link-color-hover  : #E5751F;
+    --global-footer-bg-color            : #f5edef;
+}
+
+/* Maroon masthead bar */
+.masthead {
+    background: #861F41 !important;
+
+    &::after {
+        background: #6a1833 !important;
+    }
+}
+
+/* Keep nav items white on maroon background */
+.masthead__menu-item a {
+    color: #ffffff !important;
+}
+
+.masthead__menu-item a:hover {
+    color: #E5751F !important;
+}
+
+.masthead__menu-item.selected a {
+    color: #ffffff !important;
+    border-bottom-color: #E5751F !important;
+}
+
+/* Greedy nav (mobile hamburger) */
+.greedy-nav {
+    background: #861F41 !important;
+
+    a {
+        color: #ffffff !important;
+    }
+
+    a:hover {
+        color: #E5751F !important;
+    }
+
+    .visible-links a:before {
+        background: #E5751F !important;
+    }
+}
+
+.greedy-nav__toggle {
+    color: #ffffff !important;
+}
+
+.hidden-links {
+    background: #861F41 !important;
+
+    a {
+        color: #ffffff !important;
+    }
+
+    a:hover {
+        color: #E5751F !important;
+    }
+}

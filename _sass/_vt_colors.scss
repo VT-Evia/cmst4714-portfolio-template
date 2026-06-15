@@ -1,0 +1,49 @@
+/* ==========================================================================
+   VIRGINIA TECH COLOR OVERRIDES
+   Chicago Maroon: #861F41
+   Burnt Orange:   #E5751F
+   ========================================================================== */
+
+/* Global link and accent colors */
+:root {
+    --global-base-color                 : #861F41;
+    --global-link-color                 : #861F41;
+    --global-link-color-hover           : #E5751F;
+    --global-link-color-visited         : #6a1833;
+    --global-masthead-link-color        : #ffffff;
+    --global-masthead-link-color-hover  : #E5751F;
+    --global-footer-bg-color            : #f5edef;
+}
+
+/* Masthead: override bg-color in this scope so greedy-nav, its button,
+   and hidden-links all inherit maroon without fighting specificity */
+.masthead {
+    background: #861F41;
+
+    &::after {
+        background: #6a1833;
+    }
+
+    /* Scope --global-bg-color to maroon for all children that use it */
+    --global-bg-color: #861F41;
+
+    /* Nav underline accent on hover */
+    .greedy-nav .visible-links a:before {
+        background: #E5751F;
+    }
+}
+
+/* Hidden dropdown keeps a readable background */
+.greedy-nav .hidden-links {
+    --global-bg-color: #ffffff;
+    background: #861F41;
+
+    a {
+        color: #ffffff;
+    }
+
+    a:hover {
+        color: #E5751F;
+        background: #6a1833;
+    }
+}

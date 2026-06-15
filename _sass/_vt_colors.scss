@@ -4,7 +4,6 @@
    Burnt Orange:   #E5751F
    ========================================================================== */
 
-/* Global link and accent colors */
 :root {
     --global-base-color                 : #861F41;
     --global-link-color                 : #861F41;
@@ -15,35 +14,58 @@
     --global-footer-bg-color            : #f5edef;
 }
 
-/* Masthead: override bg-color in this scope so greedy-nav, its button,
-   and hidden-links all inherit maroon without fighting specificity */
+/* Maroon masthead bar */
 .masthead {
-    background: #861F41;
+    background: #861F41 !important;
 
     &::after {
-        background: #6a1833;
-    }
-
-    /* Scope --global-bg-color to maroon for all children that use it */
-    --global-bg-color: #861F41;
-
-    /* Nav underline accent on hover */
-    .greedy-nav .visible-links a:before {
-        background: #E5751F;
+        background: #6a1833 !important;
     }
 }
 
-/* Hidden dropdown keeps a readable background */
-.greedy-nav .hidden-links {
-    --global-bg-color: #ffffff;
-    background: #861F41;
+/* Keep nav items white on maroon background */
+.masthead__menu-item a {
+    color: #ffffff !important;
+}
+
+.masthead__menu-item a:hover {
+    color: #E5751F !important;
+}
+
+.masthead__menu-item.selected a {
+    color: #ffffff !important;
+    border-bottom-color: #E5751F !important;
+}
+
+/* Greedy nav (mobile hamburger) */
+.greedy-nav {
+    background: #861F41 !important;
 
     a {
-        color: #ffffff;
+        color: #ffffff !important;
     }
 
     a:hover {
-        color: #E5751F;
-        background: #6a1833;
+        color: #E5751F !important;
+    }
+
+    .visible-links a:before {
+        background: #E5751F !important;
+    }
+}
+
+.greedy-nav__toggle {
+    color: #ffffff !important;
+}
+
+.hidden-links {
+    background: #861F41 !important;
+
+    a {
+        color: #ffffff !important;
+    }
+
+    a:hover {
+        color: #E5751F !important;
     }
 }

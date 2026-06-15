@@ -30,6 +30,7 @@ author:
   bio     : "Senior, School of Communication, Virginia Tech. Interested in how human communicators build meaning in AI-mediated environments."
   location: "Blacksburg, VA"
   email   : "robin.hokie@vt.edu"
+  linkedin: "robinhokie"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -212,7 +213,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
 
 

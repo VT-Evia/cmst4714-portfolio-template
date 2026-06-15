@@ -1,101 +1,146 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Welcome to Your CMST 4714 Portfolio
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
-
-# Getting Started
-
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Edit site-wide configuration in `_config.yml` and double check that the `url` is the one that you just selected in the previous step and that `repository` reflects the correct path for your repository.
-1. Add your site content, upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
-
-See more info at https://academicpages.github.io/
-
-### Additional Tutorials
-
-Additional tutorials for working with the Academic Pages template can be found at the following sites:
-- https://jayrobwilliams.com/posts/2020/06/academic-website/
-
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distributions and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try running `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stopping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
-```
-
-You should now be able to access the website from `localhost:4000`.
-
-### Using the DevContainer in VS Code
-
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii), and additional maintainers would be welcome.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of the template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize, although [rebasing](https://git-scm.com/docs/git-rebase) the changes from this template will work along with manually [cherry picking](https://git-scm.com/docs/git-cherry-pick) the relevant commits. If you are not comfortable with the Git command line, you can save your various `.yml` configuration files and Markdown files, delete the repository, and fork it again. 
+This is your professional portfolio for **CMST 4714: The Human Communicator in an Era
+of AI** at Virginia Tech. By the end of the semester, this site will document your
+intellectual work, your professional presence, and your developing argument about what
+human communicators bring to an AI-shaped world.
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## Before you do anything else: read this
+
+This template comes pre-filled with a fictional student named **Robin Hokie**. Robin's
+content is there to show you what a finished portfolio looks like — the structure, the
+voice, the level of detail. **You must replace all of Robin's content with your own.**
+
+Do not edit around Robin's text. Delete it and start fresh. Submitting Robin Hokie's
+About page with your name at the top is not a portfolio. It is a citation violation.
+
+---
+
+## Getting your site live (20–30 minutes)
+
+### 1. Enable GitHub Pages
+
+1. Go to your repo → **Settings** → **Pages** (left sidebar)
+2. Under "Build and deployment," set Source to **GitHub Actions**
+3. Save
+
+Your site will be published at `https://yourusername.github.io/cmst4714-portfolio`
+(or whatever you named your repo). It may take 2–5 minutes for the first build.
+
+### 2. Check your build status
+
+Go to the **Actions** tab in your repo. You should see a workflow run. Green checkmark
+= your site is live. Yellow circle = still building. Red X = something went wrong.
+
+**If you see a red X:** Copy the error message from the failed run and bring it to
+class or paste it into HokieAI with the prompt: *"I'm building a Jekyll GitHub Pages
+site using the academicpages theme and got this error: [paste error]. What's wrong and
+how do I fix it?"* Most errors are a single character off in a YAML file.
+
+### 3. Visit your site
+
+Go to `https://yourusername.github.io/your-repo-name`. You should see Robin Hokie's
+portfolio. Now start replacing it.
+
+---
+
+## Editing your content (no terminal required)
+
+All editing can be done through the **GitHub web interface** or **GitHub Desktop**.
+You do not need to run Jekyll locally.
+
+### Files you will edit
+
+| File | What it controls |
+|------|-----------------|
+| `_pages/about.md` | Your About/Bio page (the homepage) |
+| `_pages/cv.md` | Your CV/Resume page |
+| `_portfolio/project-1.md` | Portfolio project 1 |
+| `_portfolio/project-2.md` | Portfolio project 2 |
+| `_portfolio/project-3.md` | Portfolio project 3 |
+| `_config.yml` | Your name, email, bio, social links |
+
+### Editing `_config.yml`
+
+This file controls your site-wide identity. Find the block that looks like this and
+fill in your own information:
+
+```yaml
+# ============================================================
+# EDIT THIS BLOCK — your name, bio, and contact info
+# Do not change anything outside this block unless you know
+# what you are doing. Bad YAML will break your site.
+# ============================================================
+author:
+  name    : "Your Full Name"
+  avatar  : "/images/bio-photo.jpg"
+  bio     : "Senior, School of Communication, Virginia Tech."
+  location: "Blacksburg, VA"
+  email   : "youremail@vt.edu"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+# ============================================================
+# END EDIT ZONE
+# ============================================================
+```
+
+**Important:** YAML is whitespace-sensitive. Do not change the indentation. Only edit
+the values inside the quotation marks.
+
+### Adding a photo
+
+Replace the file at `images/bio-photo.jpg` with your own photo. Keep the filename
+exactly the same, or update the `avatar` line in `_config.yml` to match your filename.
+
+---
+
+## Markdown basics
+
+All content files use Markdown. You do not need to know HTML.
+
+```markdown
+# Heading 1
+## Heading 2
+
+Regular paragraph text.
+
+**Bold text**   *Italic text*
+
+- Bullet item
+- Another item
+
+[Link text](https://example.com)
+```
+
+A short in-class Markdown tutorial runs in Week 2. Come with your repo already set up.
+
+---
+
+## Keeping a real revision history
+
+The GitHub revision history of your repository is part of your grade. Make commits as
+you work — not one large upload at the end of each milestone. A commit after every
+meaningful editing session is the right pace. Your commit messages should be honest
+about what you changed: *"Add about page draft"* is better than *"update."*
+
+---
+
+## Getting help
+
+- **HokieAI:** Paste your error message or your Markdown draft and ask for help.
+  HokieAI is available to all VT students at [hokieai.vt.edu] beginning August 2026.
+- **GitHub Docs:** `docs.github.com` has clear walkthroughs for everything this
+  template uses.
+- **In class:** Weeks 1–3 include tutorial modules specifically for this setup.
+- **Office hours:** LAHSB 013. Come with your laptop and your specific question.
+
+---
+
+*CMST 4714 — School of Communication — Virginia Tech — Fall 2026*

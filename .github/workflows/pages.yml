@@ -1,7 +1,5 @@
 name: Deploy Jekyll site to GitHub Pages
 
-# Trigger commit: verifying GitHub Pages deployment recovers from the
-# "deployment_queued" hang after resetting the github-pages environment.
 on:
   push:
     branches: ["master"]

@@ -25,7 +25,7 @@ repository               : "vt-evia/cmst4714-portfolio-template"
 # what you are doing. Bad YAML will break your site.
 # ============================================================
 author:
-  name    : "Robin Hokie"
+  name    : "Robin Hokies"
   avatar  : "/images/bio-photo.jpg"
   bio     : "Senior, School of Communication, Virginia Tech. Interested in how human communicators build meaning in AI-mediated environments."
   location: "Blacksburg, VA"

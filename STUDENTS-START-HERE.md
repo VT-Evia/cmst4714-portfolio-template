@@ -64,8 +64,9 @@ You do not need to run Jekyll locally.
 
 ### Editing `_config.yml`
 
-This file controls your site-wide identity. Find the block that looks like this and
-fill in your own information:
+This file controls your site-wide identity, **including everything that appears in the
+sidebar** next to your bio (name, photo, location, email, and social links). Find the
+block that looks like this and fill in your own information:
 
 ```yaml
 # ============================================================
@@ -74,18 +75,14 @@ fill in your own information:
 # what you are doing. Bad YAML will break your site.
 # ============================================================
 author:
-  name    : "Your Full Name"
-  avatar  : "/images/bio-photo.jpg"
-  bio     : "Senior, School of Communication, Virginia Tech."
-  location: "Blacksburg, VA"
-  email   : "youremail@vt.edu"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourprofile"
+  name     : "Your Full Name"
+  avatar   : "/images/bio-photo.jpg"
+  bio      : "Senior, School of Communication, Virginia Tech."
+  location : "Blacksburg, VA"
+  email    : "youremail@vt.edu"
+  github   : "yourusername"    # username only, no URL — set blank to hide
+  instagram: "yourusername"    # username only, no URL — set blank to hide
+  linkedin : "yourusername"    # username only, no URL — set blank to hide
 # ============================================================
 # END EDIT ZONE
 # ============================================================
@@ -93,6 +90,22 @@ author:
 
 **Important:** YAML is whitespace-sensitive. Do not change the indentation. Only edit
 the values inside the quotation marks.
+
+#### Adding, updating, or removing sidebar links
+
+Each social link is a single line: `key: "yourusername"`. The template turns each key
+into an icon + link in the sidebar automatically — you never type a full URL.
+
+- **To update a link:** change the username in quotes, e.g. `github: "newusername"`.
+- **To remove a link:** either delete the line entirely, or leave the value blank
+  (`instagram: ""`). A blank or missing value means the icon simply won't appear.
+- **To add a link the template already supports:** add a new line in the same
+  `key: "username"` format. Beyond `github`, `instagram`, and `linkedin`, other
+  supported keys include `twitter`, `youtube`, `bluesky`, `mastodon`, `orcid`, and
+  more — the full list lives in `_includes/author-profile.html` if you want to see
+  every option (search for lines like `{% if author.<key> %}`).
+- Keep every line indented exactly two spaces under `author:`, matching the lines
+  already there. Broken indentation breaks the whole site.
 
 ### Adding a photo
 

@@ -103,7 +103,7 @@ into an icon + link in the sidebar automatically — you never type a full URL.
   `key: "username"` format. Beyond `github`, `instagram`, and `linkedin`, other
   supported keys include `twitter`, `youtube`, `bluesky`, `mastodon`, `orcid`, and
   more — the full list lives in `_includes/author-profile.html` if you want to see
-  every option (search for lines like `{% if author.<key> %}`).
+  every option (search that file for `author.` followed by a key name, e.g. `author.twitter`).
 - Keep every line indented exactly two spaces under `author:`, matching the lines
   already there. Broken indentation breaks the whole site.
 

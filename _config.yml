@@ -25,18 +25,14 @@ repository               : "vt-evia/cmst4714-portfolio-template"
 # what you are doing. Bad YAML will break your site.
 # ============================================================
 author:
-  name    : "Robin Hokies"
-  avatar  : "/images/bio-photo.jpg"
-  bio     : "Senior, School of Communication, Virginia Tech. Interested in how human communicators build meaning in AI-mediated environments."
-  location: "Blacksburg, VA"
-  email   : "robin.hokie@vt.edu"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/robinhokie"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/robinhokie"
+  name     : "Robin Hokies"
+  avatar   : "/images/bio-photo.jpg"
+  bio      : "Senior, School of Communication, Virginia Tech. Interested in how human communicators build meaning in AI-mediated environments."
+  location : "Blacksburg, VA"
+  email    : "robin.hokie@vt.edu"
+  github   : "robinhokie"    # username only, no URL — set blank to hide
+  instagram: "robinhokie"    # username only, no URL — set blank to hide
+  linkedin : "robinhokie"    # username only, no URL — set blank to hide
 # ============================================================
 # END EDIT ZONE
 # Academicpages config continues below this point.

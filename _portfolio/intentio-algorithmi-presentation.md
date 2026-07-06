@@ -2,6 +2,10 @@
 title: "Intentio Algorithmi Framework Presentation: Recommendation Engines and the Displaced Reader"
 excerpt: "A Marp presentation applying the four-intention framework to streaming recommendation systems."
 collection: portfolio
+category: senior
+course: "CMST 4714: The Human Communicator in an Era of AI"
+term: "Fall 2026"
+date: 2026-10-28
 ---
 
 <!-- ============================================================ -->

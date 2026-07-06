@@ -44,9 +44,22 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
+
+# Portfolio Category - groups portfolio work samples by year in the student's
+# academic career. Order here controls display order on the Portfolio page.
+# Each _portfolio entry sets `category:` to one of these keys.
+portfolio_category:
+  freshman:
+    title: 'Freshman Year'
+  sophomore:
+    title: 'Sophomore Year'
+  junior:
+    title: 'Junior Year'
+  senior:
+    title: 'Senior Year — CMST 4714 and Capstone Work'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

@@ -11,7 +11,11 @@ human communicators bring to an AI-shaped world.
 
 This template comes pre-filled with a fictional student named **Robin Hokie**. Robin's
 content is there to show you what a finished portfolio looks like — the structure, the
-voice, the level of detail. **You must replace all of Robin's content with your own.**
+voice, the level of detail. Note that Robin's portfolio isn't just CMST 4714 work: it
+spans all four years of the Communication major, from a freshman public speaking class
+through this semester's capstone course. **Your own portfolio should do the same** —
+include work from other courses, not only CMST 4714 — and you **must replace all of
+Robin's content with your own.**
 
 Do not edit around Robin's text. Delete it and start fresh. Submitting Robin Hokie's
 About page with your name at the top is not a portfolio. It is a citation violation.
@@ -57,9 +61,7 @@ You do not need to run Jekyll locally.
 |------|-----------------|
 | `_pages/about.md` | Your About/Bio page (the homepage) |
 | `_pages/cv.md` | Your CV/Resume page |
-| `_portfolio/project-1.md` | Portfolio project 1 |
-| `_portfolio/project-2.md` | Portfolio project 2 |
-| `_portfolio/project-3.md` | Portfolio project 3 |
+| `_portfolio/*.md` | One file per portfolio work sample — see `STUDENTS-START-HERE.md` |
 | `_config.yml` | Your name, email, bio, social links |
 
 ### Editing `_config.yml`

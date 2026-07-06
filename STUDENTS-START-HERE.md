@@ -11,7 +11,11 @@ human communicators bring to an AI-shaped world.
 
 This template comes pre-filled with a fictional student named **Robin Hokie**. Robin's
 content is there to show you what a finished portfolio looks like — the structure, the
-voice, the level of detail. **You must replace all of Robin's content with your own.**
+voice, the level of detail. Note that Robin's portfolio isn't just CMST 4714 work: it
+spans all four years of the Communication major, from a freshman public speaking class
+through this semester's capstone course. **Your own portfolio should do the same** —
+include work from other courses, not only CMST 4714 — and you **must replace all of
+Robin's content with your own.**
 
 Do not edit around Robin's text. Delete it and start fresh. Submitting Robin Hokie's
 About page with your name at the top is not a portfolio. It is a citation violation.
@@ -57,10 +61,28 @@ You do not need to run Jekyll locally.
 |------|-----------------|
 | `_pages/about.md` | Your About/Bio page (the homepage) |
 | `_pages/cv.md` | Your CV/Resume page |
-| `_portfolio/project-1.md` | Portfolio project 1 |
-| `_portfolio/project-2.md` | Portfolio project 2 |
-| `_portfolio/project-3.md` | Portfolio project 3 |
+| `_portfolio/*.md` | One file per portfolio work sample (see below) |
 | `_config.yml` | Your name, email, bio, social links |
+
+### About the `_portfolio/` files
+
+Robin's example portfolio has eight files in `_portfolio/`, one per work sample,
+spanning freshman year through this semester's CMST 4714 projects. Each file's front
+matter includes:
+
+```yaml
+category: freshman   # freshman, sophomore, junior, or senior — controls grouping
+course: "CMST 1016: Introduction to Public Speaking"
+term: "Fall 2023"
+date: 2023-10-12
+```
+
+The Portfolio page automatically groups entries by `category` (using the labels defined
+under `portfolio_category` in `_config.yml`) and sorts each group by `date`. You do not
+need to keep exactly eight files or exactly Robin's courses — add, remove, or rename
+files to match your own coursework, but keep at least one sample from CMST 4714 and, if
+you have them, samples from earlier courses so your portfolio reflects your whole time
+at Virginia Tech, not just this semester.
 
 ### Editing `_config.yml`
 

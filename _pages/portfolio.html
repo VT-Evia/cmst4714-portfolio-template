@@ -7,8 +7,29 @@ author_profile: true
 
 {% include base_path %}
 
+<p>This portfolio spans my four years as a Communication major at Virginia Tech —
+from my first public speaking course through CMST 4714: The Human Communicator in
+an Era of AI. It is organized chronologically by academic year so you can see how
+my thinking and craft developed over time, not just what I produced this semester.</p>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+{% if site.portfolio_category %}
+  {% assign sorted_portfolio = site.portfolio | sort: 'date' %}
+  {% for category in site.portfolio_category %}
+    {% assign title_shown = false %}
+    {% for post in sorted_portfolio %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% assign sorted_portfolio = site.portfolio | sort: 'date' %}
+  {% for post in sorted_portfolio %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

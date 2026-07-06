@@ -42,11 +42,18 @@ Minor: Tech for Humanity
 - HokieAI, ChatGPT (disclosure-compliant use)
 - Spanish (conversational)
 
-## Coursework Relevant to This Portfolio
+## Coursework Represented in This Portfolio
 
-- CMST 4714: The Human Communicator in an Era of AI
+- CMST 4714: The Human Communicator in an Era of AI (Senior, Fall 2026)
+- CMST 4544: Public Relations Campaigns (Junior, Spring 2026)
+- CMST 3614: Organizational Communication (Junior, Fall 2025)
+- CMST 3054: Digital Media Writing (Sophomore, Fall 2024)
+- CMST 2074: Interpersonal Communication (Freshman, Spring 2024)
+- CMST 1016: Introduction to Public Speaking (Freshman, Fall 2023)
+
+## Additional Relevant Coursework
+
 - CMST 3224: Communication Theory
-- CMST 3614: Organizational Communication
 - ENGL 2024: AI and Writing
 - PHIL 1404: Ethics and Technology
 

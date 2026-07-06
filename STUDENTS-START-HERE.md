@@ -92,10 +92,11 @@ block that looks like this and fill in your own information:
 
 ```yaml
 # ============================================================
-# EDIT THIS BLOCK — your name, bio, and contact info
+# EDIT THIS BLOCK — your name, site title, bio, and contact info
 # Do not change anything outside this block unless you know
 # what you are doing. Bad YAML will break your site.
 # ============================================================
+title                    : "Your Name's Portfolio" # shown in the header bar and browser tab
 author:
   name     : "Your Full Name"
   avatar   : "/images/bio-photo.jpg"

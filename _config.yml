@@ -9,23 +9,24 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "CMST 4714 Portfolio"
 title_separator          : "-"
-name                     : "CMST 4714: The Human Communicator in an Era of AI"
+name                     : "Robin Hokie: Communication Portfolio"
 description              : >
-  Professional portfolio template for CMST 4714, School of Communication,
-  Virginia Tech. Fall 2026.
+  Professional portfolio for Robin Hokie, School of Communication,
+  Virginia Tech, including work from CMST 4714: The Human Communicator in an
+  Era of AI.
 url                      : "https://vt-evia.github.io"
 baseurl                  : "/cmst4714-portfolio-template"
 repository               : "vt-evia/cmst4714-portfolio-template"
 
 # ============================================================
-# EDIT THIS BLOCK — your name, bio, and contact info
+# EDIT THIS BLOCK — your name, site title, bio, and contact info
 # Do not change anything outside this block unless you know
 # what you are doing. Bad YAML will break your site.
 # ============================================================
+title                    : "Robin Hokie's Portfolio" # the name shown in the maroon header bar and browser tab
 author:
-  name     : "Robin Hokies"
+  name     : "Robin Hokie"
   avatar   : "/images/bio-photo.jpg"
   bio      : "Senior, School of Communication, Virginia Tech. Interested in how human communicators build meaning in AI-mediated environments."
   location : "Blacksburg, VA"

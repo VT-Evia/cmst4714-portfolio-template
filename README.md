@@ -137,7 +137,6 @@ about what you changed: *"Add about page draft"* is better than *"update."*
 ## Getting help
 
 - **HokieAI:** Paste your error message or your Markdown draft and ask for help.
-  HokieAI is available to all VT students at [hokieai.vt.edu] beginning August 2026.
 - **GitHub Docs:** `docs.github.com` has clear walkthroughs for everything this
   template uses.
 - **In class:** Weeks 1–3 include tutorial modules specifically for this setup.

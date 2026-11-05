@@ -17,8 +17,7 @@ through this semester's capstone course. **Your own portfolio should do the same
 include work from other courses, not only CMST 4714 — and you **must replace all of
 Robin's content with your own.**
 
-Do not edit around Robin's text. Delete it and start fresh. Submitting Robin Hokie's
-About page with your name at the top is not a portfolio. It is a citation violation.
+Do not edit around Robin's text. Delete it and start fresh. 
 
 ---
 
@@ -88,7 +87,7 @@ start replacing it.
 ## Working in github.dev
 
 **github.dev** is a full code editor (VS Code) that runs in your browser. Nothing to
-install, nothing to pay for, and it works on any laptop. We use it instead of
+install, nothing to pay for, and it works on any computer. We will use it instead of
 Codespaces.
 
 ### Opening github.dev
@@ -112,8 +111,6 @@ Codespaces.
 - **Search** — `Ctrl+Shift+F` (Mac: `Cmd+Shift+F`) searches every file. Search for
   "Robin" to find content you still need to replace.
 
-github.dev has **no terminal** and cannot run the site locally. That's fine — GitHub
-builds and publishes the site for you every time you commit.
 
 ### Saving your work (committing)
 
@@ -267,7 +264,7 @@ exactly the same, or update the `avatar` line in `_config.yml` to match your fil
 
 ## Markdown basics
 
-All content files use Markdown. You do not need to know HTML.
+All content files use Markdown. You do not need to know HTML. However, mixing HTML and Markdown is ok (as some of you did for your primer website).
 
 ```markdown
 # Heading 1
@@ -283,7 +280,7 @@ Regular paragraph text.
 [Link text](https://example.com)
 ```
 
-A short in-class Markdown tutorial runs in Week 2. Come with your repo already set up.
+Don't forget the [Markdown Tutorial](http://markdowntutorial.com) that we have used earlier this semester.
 
 ---
 
@@ -301,14 +298,14 @@ applies to changes Copilot makes, too.
 
 - **Copilot Chat:** Ask it to explain a file or an error (use **Ask** mode).
 - **HokieAI:** Paste your error message or your Markdown draft and ask for help.
-  HokieAI is available to all VT students at hokieai.vt.edu.
+  HokieAI is available to all VT students at [hokieai.vt.edu](http://hokieai.vt.edu).
 - **GitHub Docs:** [docs.github.com](https://docs.github.com) has clear walkthroughs
   for everything this template uses, including
   [github.dev](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)
   and [GitHub Copilot](https://docs.github.com/en/copilot).
-- **In class:** Weeks 1–3 include tutorial modules specifically for this setup.
+- **In class:** All the stuff we have already covered about working in GitHub.
 - **Office hours:** LAHSB 013. Come with your laptop and your specific question.
 
 ---
 
-*CMST 4714 — School of Communication — Virginia Tech — Fall 2026*
+Thanks to your uncle Claude for helping with this template. 

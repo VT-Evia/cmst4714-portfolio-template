@@ -24,36 +24,162 @@ About page with your name at the top is not a portfolio. It is a citation violat
 
 ## Getting your site live (20–30 minutes)
 
-### 1. Enable GitHub Pages
+### 1. Create your repo — name it `yourusername.github.io`
+
+This portfolio will be your **main GitHub Pages website**, so it has to live in a repo
+named exactly after your GitHub username:
+
+```
+yourusername.github.io
+```
+
+If your GitHub username is `hokiebird22`, your repo must be named
+`hokiebird22.github.io`, and your site will live at `https://hokiebird22.github.io`.
+Any other name (for example `cmst4714-portfolio`) puts your site at a longer
+sub-address instead of your main one.
+
+1. At the top of this template's page on GitHub, click **Use this template** →
+   **Create a new repository**.
+2. **Owner:** your personal account.
+3. **Repository name:** `yourusername.github.io` — all lowercase, spelled exactly like
+   your username.
+4. **Visibility:** Public.
+5. Click **Create repository**.
+
+### 2. Point the site at your new address
+
+Open `_config.yml` in your new repo (see "Working in github.dev" below, or click the
+file and then the pencil icon). At the top of the **EDIT THIS BLOCK** section, change
+these three lines:
+
+```yaml
+url                      : "https://yourusername.github.io"
+baseurl                  : ""
+repository               : "yourusername/yourusername.github.io"
+```
+
+`baseurl` must be empty quotes (`""`). If you skip this step, your site will load
+without its styling and images.
+
+### 3. Enable GitHub Pages
 
 1. Go to your repo → **Settings** → **Pages** (left sidebar)
 2. Under "Build and deployment," set Source to **GitHub Actions**
-3. Save
 
-Your site will be published at `https://yourusername.github.io/cmst4714-portfolio`
-(or whatever you named your repo). It may take 2–5 minutes for the first build.
+That's it — GitHub saves the setting automatically. The first build takes 2–5 minutes.
 
-### 2. Check your build status
+### 4. Check your build status
 
 Go to the **Actions** tab in your repo. You should see a workflow run. Green checkmark
 = your site is live. Yellow circle = still building. Red X = something went wrong.
 
-**If you see a red X:** Copy the error message from the failed run and bring it to
-class or paste it into HokieAI with the prompt: *"I'm building a Jekyll GitHub Pages
-site using the academicpages theme and got this error: [paste error]. What's wrong and
-how do I fix it?"* Most errors are a single character off in a YAML file.
+**If you see a red X:** Click the failed run, copy the error message, and paste it into
+Copilot Chat (see below) or HokieAI with the prompt: *"I'm building a Jekyll GitHub
+Pages site using the academicpages theme and got this error: [paste error]. What's
+wrong and how do I fix it?"* Most errors are a single character off in a YAML file.
 
-### 3. Visit your site
+### 5. Visit your site
 
-Go to `https://yourusername.github.io/your-repo-name`. You should see Robin Hokie's
-portfolio. Now start replacing it.
+Go to `https://yourusername.github.io`. You should see Robin Hokie's portfolio. Now
+start replacing it.
 
 ---
 
-## Editing your content (no terminal required)
+## Working in github.dev
 
-All editing can be done through the **GitHub web interface** or **GitHub Desktop**.
-You do not need to run Jekyll locally.
+**github.dev** is a full code editor (VS Code) that runs in your browser. Nothing to
+install, nothing to pay for, and it works on any laptop. We use it instead of
+Codespaces.
+
+### Opening github.dev
+
+1. Go to your repo on github.com and make sure you're signed in.
+2. Press the **`.`** (period) key on your keyboard.
+   - Or change the address from `github.com/...` to `github.dev/...`
+     (e.g. `https://github.dev/hokiebird22/hokiebird22.github.io`).
+3. The editor opens in the same tab. The first time, it may ask you to sign in or to
+   trust the repo — accept.
+
+### Finding your way around
+
+- **Explorer** (top icon in the left bar) — your files and folders. Click a file to
+  open it.
+- **Markdown preview** — with a `.md` file open, press `Ctrl+Shift+V`
+  (Mac: `Cmd+Shift+V`) to see roughly how it will look. Formatting only — the full site
+  look only appears after you commit and the site rebuilds.
+- **Uploading files** (photos, PDFs) — drag them from your computer onto a folder in
+  the Explorer, e.g. `images/` or `files/`.
+- **Search** — `Ctrl+Shift+F` (Mac: `Cmd+Shift+F`) searches every file. Search for
+  "Robin" to find content you still need to replace.
+
+github.dev has **no terminal** and cannot run the site locally. That's fine — GitHub
+builds and publishes the site for you every time you commit.
+
+### Saving your work (committing)
+
+Edits in github.dev are **not saved to GitHub until you commit.**
+
+1. Click the **Source Control** icon in the left bar (the branching-lines icon; a
+   number shows how many files you changed).
+2. Review your changes — click any file to see before/after.
+3. Type a clear message in the box at the top, e.g. *"Replace Robin's About page with
+   my bio."*
+4. Click **Commit & Push**.
+5. Wait 2–5 minutes, check the **Actions** tab, then refresh your site.
+
+If you close the tab without committing, your changes are lost.
+
+---
+
+## Using GitHub Copilot Chat in github.dev
+
+Your GitHub Education student benefits include **GitHub Copilot**, which works inside
+github.dev. Copilot Chat can explain files, fix broken YAML, and make edits for you.
+
+### Opening Copilot Chat
+
+1. In github.dev, click the **Copilot / chat icon** in the top bar or the left bar,
+   or press `Ctrl+Alt+I` (Mac: `Cmd+Ctrl+I`).
+2. If you don't see it: open **Extensions** (the four-squares icon), search
+   **GitHub Copilot Chat**, and click **Install**. Sign in with your GitHub account if
+   asked.
+3. At the bottom of the chat panel, use the **mode picker** to choose how Copilot works:
+   - **Ask** — answers questions, does not touch your files. Use this to learn.
+   - **Agent** (or **Edit**, if that's what your menu shows) — Copilot edits files for
+     you. Use this to make changes.
+
+### Asking Copilot to make a change
+
+1. **Give it the right file.** Open the file first, or type `#` in the chat box and
+   pick the file (e.g. `#about.md`), so Copilot knows what you mean.
+2. **Be specific.** Say what to change and what to leave alone:
+   - *"In `_config.yml`, change the author name to Jordan Lee and the email to
+     jlee@vt.edu. Don't change anything else."*
+   - *"Create a new file in `_portfolio/` for my COMM 2034 research paper, using an
+     existing `_portfolio/` file as a model. Category junior, term Spring 2025. Leave the
+     body text as placeholder headings I'll fill in."*
+   - *"The sidebar isn't showing my LinkedIn link. Look at `_config.yml` and tell me
+     why."*
+   - *"My Actions build failed with this error: [paste]. Fix it."*
+3. **Review every change.** Copilot shows its edits highlighted in the file. Read them,
+   then click **Keep** (accept) or **Undo** (reject) for each one.
+4. **Commit.** Copilot's edits are just like yours — they aren't on GitHub until you
+   commit and push from **Source Control**. Write the commit message yourself so it
+   honestly describes what changed.
+
+### Rules for using Copilot in this course
+
+- **Copilot handles the code; you write the words.** Use it for YAML, Markdown
+  formatting, layout, and fixing errors. Your bio, project reflections, and arguments
+  must be your own writing, consistent with the course AI policy.
+- **Check its work.** Copilot can be wrong or confidently change things you didn't ask
+  about. If a change looks unfamiliar, choose **Undo** and ask it to explain first.
+- **Keep commits small.** One change, one commit. If Copilot breaks something, you
+  can see exactly which commit did it in your history.
+
+---
+
+## Editing your content
 
 ### Files you will edit
 
@@ -61,33 +187,53 @@ You do not need to run Jekyll locally.
 |------|-----------------|
 | `_pages/about.md` | Your About/Bio page (the homepage) |
 | `_pages/cv.md` | Your CV/Resume page |
-| `_portfolio/*.md` | One file per portfolio work sample — see `STUDENTS-START-HERE.md` |
-| `_config.yml` | Your name, email, bio, social links |
+| `_portfolio/*.md` | One file per portfolio work sample (see below) |
+| `_config.yml` | Your web address, name, email, bio, social links |
+| `images/bio-photo.jpg` | Your sidebar photo |
+
+### About the `_portfolio/` files
+
+Robin's example portfolio has eight files in `_portfolio/`, one per work sample,
+spanning freshman year through this semester's CMST 4714 projects. Each file's front
+matter includes:
+
+```yaml
+category: freshman   # freshman, sophomore, junior, or senior — controls grouping
+course: "CMST 1016: Introduction to Public Speaking"
+term: "Fall 2023"
+date: 2023-10-12
+```
+
+The Portfolio page automatically groups entries by `category` (using the labels defined
+under `portfolio_category` in `_config.yml`) and sorts each group by `date`. You do not
+need to keep exactly eight files or exactly Robin's courses — add, remove, or rename
+files to match your own coursework, but keep at least one sample from CMST 4714 and, if
+you have them, samples from earlier courses so your portfolio reflects your whole time
+at Virginia Tech, not just this semester.
 
 ### Editing `_config.yml`
 
-This file controls your site-wide identity. Find the block that looks like this and
-fill in your own information:
+This file controls your site-wide identity, **including everything that appears in the
+sidebar** next to your bio (name, photo, location, email, and social links). Find the
+block that looks like this and fill in your own information:
 
 ```yaml
 # ============================================================
-# EDIT THIS BLOCK — your name, bio, and contact info
-# Do not change anything outside this block unless you know
-# what you are doing. Bad YAML will break your site.
+# EDIT THIS BLOCK — your web address, name, site title, bio, and contact info
 # ============================================================
+url                      : "https://yourusername.github.io"
+baseurl                  : ""
+repository               : "yourusername/yourusername.github.io"
+title                    : "Your Name's Portfolio" # shown in the header bar and browser tab
 author:
-  name    : "Your Full Name"
-  avatar  : "/images/bio-photo.jpg"
-  bio     : "Senior, School of Communication, Virginia Tech."
-  location: "Blacksburg, VA"
-  email   : "youremail@vt.edu"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourprofile"
+  name     : "Your Full Name"
+  avatar   : "/images/bio-photo.jpg"
+  bio      : "Senior, School of Communication, Virginia Tech."
+  location : "Blacksburg, VA"
+  email    : "youremail@vt.edu"
+  github   : "yourusername"    # username only, no URL — set blank to hide
+  instagram: "yourusername"    # username only, no URL — set blank to hide
+  linkedin : "yourusername"    # username only, no URL — set blank to hide
 # ============================================================
 # END EDIT ZONE
 # ============================================================
@@ -95,6 +241,22 @@ author:
 
 **Important:** YAML is whitespace-sensitive. Do not change the indentation. Only edit
 the values inside the quotation marks.
+
+#### Adding, updating, or removing sidebar links
+
+Each social link is a single line: `key: "yourusername"`. The template turns each key
+into an icon + link in the sidebar automatically — you never type a full URL.
+
+- **To update a link:** change the username in quotes, e.g. `github: "newusername"`.
+- **To remove a link:** either delete the line entirely, or leave the value blank
+  (`instagram: ""`). A blank or missing value means the icon simply won't appear.
+- **To add a link the template already supports:** add a new line in the same
+  `key: "username"` format. Beyond `github`, `instagram`, and `linkedin`, other
+  supported keys include `twitter`, `youtube`, `bluesky`, `mastodon`, `orcid`, and
+  more — the full list lives in `_includes/author-profile.html` if you want to see
+  every option (search that file for `author.` followed by a key name, e.g. `author.twitter`).
+- Keep every line indented exactly two spaces under `author:`, matching the lines
+  already there. Broken indentation breaks the whole site.
 
 ### Adding a photo
 
@@ -130,15 +292,20 @@ A short in-class Markdown tutorial runs in Week 2. Come with your repo already s
 The GitHub revision history of your repository is part of your grade. Make commits as
 you work — not one large upload at the end of each milestone. A commit after every
 meaningful editing session is the right pace. Your commit messages should be honest
-about what you changed: *"Add about page draft"* is better than *"update."*
+about what you changed: *"Add about page draft"* is better than *"update."* This
+applies to changes Copilot makes, too.
 
 ---
 
 ## Getting help
 
+- **Copilot Chat:** Ask it to explain a file or an error (use **Ask** mode).
 - **HokieAI:** Paste your error message or your Markdown draft and ask for help.
-- **GitHub Docs:** `docs.github.com` has clear walkthroughs for everything this
-  template uses.
+  HokieAI is available to all VT students at hokieai.vt.edu.
+- **GitHub Docs:** [docs.github.com](https://docs.github.com) has clear walkthroughs
+  for everything this template uses, including
+  [github.dev](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)
+  and [GitHub Copilot](https://docs.github.com/en/copilot).
 - **In class:** Weeks 1–3 include tutorial modules specifically for this setup.
 - **Office hours:** LAHSB 013. Come with your laptop and your specific question.
 

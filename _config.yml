@@ -15,15 +15,17 @@ description              : >
   Professional portfolio for Robin Hokie, School of Communication,
   Virginia Tech, including work from CMST 4714: The Human Communicator in an
   Era of AI.
-url                      : "https://vt-evia.github.io"
-baseurl                  : "/cmst4714-portfolio-template"
-repository               : "vt-evia/cmst4714-portfolio-template"
 
 # ============================================================
-# EDIT THIS BLOCK — your name, site title, bio, and contact info
+# EDIT THIS BLOCK — your web address, name, site title, bio, and contact info
 # Do not change anything outside this block unless you know
 # what you are doing. Bad YAML will break your site.
 # ============================================================
+# Your web address. Your repo must be named yourusername.github.io.
+# Replace "vt-evia" with your GitHub username, and set baseurl to "" (empty quotes).
+url                      : "https://vt-evia.github.io"            # -> "https://yourusername.github.io"
+baseurl                  : "/cmst4714-portfolio-template"         # -> ""
+repository               : "vt-evia/cmst4714-portfolio-template"  # -> "yourusername/yourusername.github.io"
 title                    : "Robin Hokie's Portfolio" # the name shown in the maroon header bar and browser tab
 author:
   name     : "Robin Hokie"
@@ -150,7 +152,6 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
-  - Dockerfile
   - Gemfile
   - Gruntfile.js
   - gulpfile.js

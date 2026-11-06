@@ -47,7 +47,7 @@ sub-address instead of your main one.
 
 ### 2. Point the site at your new address
 
-Open `_config.yml` in your new repo (see "Working in github.dev" below, or click the
+Open `_config.yml` in your new repo (see "Working in Codespaces" below, or click the
 file and then the pencil icon). At the top of the **EDIT THIS BLOCK** section, change
 these three lines:
 
@@ -84,20 +84,19 @@ start replacing it.
 
 ---
 
-## Working in github.dev
+## Working in Codespaces
 
-**github.dev** is a full code editor (VS Code) that runs in your browser. Nothing to
-install, nothing to pay for, and it works on any computer. We will use it instead of
-Codespaces.
+You already used **Codespaces** for your primer website, so this will feel familiar: a
+full VS Code editor running in your browser, connected to your repo.
 
-### Opening github.dev
+### Opening a codespace
 
 1. Go to your repo on github.com and make sure you're signed in.
-2. Press the **`.`** (period) key on your keyboard.
-   - Or change the address from `github.com/...` to `github.dev/...`
-     (e.g. `https://github.dev/hokiebird22/hokiebird22.github.io`).
-3. The editor opens in the same tab. The first time, it may ask you to sign in or to
-   trust the repo — accept.
+2. Click the green **Code** button → **Codespaces** tab → **Create codespace on main**.
+3. The editor opens in a new tab. The first launch takes a minute or two.
+
+Next time, reopen the **same** codespace from the **Code** → **Codespaces** list instead
+of creating a new one. Every new codespace uses up more of your free allowance.
 
 ### Finding your way around
 
@@ -111,39 +110,67 @@ Codespaces.
 - **Search** — `Ctrl+Shift+F` (Mac: `Cmd+Shift+F`) searches every file. Search for
   "Robin" to find content you still need to replace.
 
-
 ### Saving your work (committing)
 
-Edits in github.dev are **not saved to GitHub until you commit.**
+Codespaces saves your files inside the codespace, but your edits are **not on GitHub —
+and not on your live site — until you commit and push.**
 
 1. Click the **Source Control** icon in the left bar (the branching-lines icon; a
    number shows how many files you changed).
 2. Review your changes — click any file to see before/after.
 3. Type a clear message in the box at the top, e.g. *"Replace Robin's About page with
    my bio."*
-4. Click **Commit & Push**.
+4. Click **Commit**, then **Sync Changes** (or use the arrow next to **Commit** and
+   choose **Commit & Push**).
 5. Wait 2–5 minutes, check the **Actions** tab, then refresh your site.
 
-If you close the tab without committing, your changes are lost.
+If you delete a codespace without pushing, those changes are gone for good.
+
+### Managing your codespaces (and your free hours)
+
+Codespaces is free up to a monthly limit of usage hours and storage. A codespace counts
+against that limit while it is **running**, even if you have closed the browser tab,
+until it times out on its own. Two habits keep you well under the limit:
+
+**1. Set a short idle timeout.** Go to
+[github.com/settings/codespaces](https://github.com/settings/codespaces):
+
+- **Default idle timeout** — how many minutes of inactivity before a codespace stops
+  itself. Set it to **30 minutes** or less.
+- **Default retention period** — how many days a *stopped* codespace is kept before
+  GitHub deletes it. A few days to a week is plenty, as long as you always push your
+  work.
+
+These settings apply to codespaces you create after changing them.
+
+**2. Stop codespaces when you're done.** See every codespace you have, and whether it's
+running, at [github.com/codespaces](https://github.com/codespaces). Click the **⋯** next
+to any codespace and choose **Stop codespace** to stop it, or **Delete** to remove one
+you no longer need (push first!).
+
+**If GitHub warns you about usage:** go to
+[github.com/codespaces](https://github.com/codespaces), stop anything that's running,
+and delete extra codespaces so you keep just one for this repo. You can check how much
+you've used at [github.com/settings/billing](https://github.com/settings/billing).
 
 ---
 
-## Using GitHub Copilot Chat in github.dev
+## Using the GitHub Copilot agent in Codespaces
 
 Your GitHub Education student benefits include **GitHub Copilot**, which works inside
-github.dev. Copilot Chat can explain files, fix broken YAML, and make edits for you.
+Codespaces. In **Agent** mode, Copilot can explain files, fix broken YAML, and make
+edits to your files for you.
 
 ### Opening Copilot Chat
 
-1. In github.dev, click the **Copilot / chat icon** in the top bar or the left bar,
+1. In your codespace, click the **Copilot / chat icon** in the top bar,
    or press `Ctrl+Alt+I` (Mac: `Cmd+Ctrl+I`).
 2. If you don't see it: open **Extensions** (the four-squares icon), search
    **GitHub Copilot Chat**, and click **Install**. Sign in with your GitHub account if
    asked.
 3. At the bottom of the chat panel, use the **mode picker** to choose how Copilot works:
    - **Ask** — answers questions, does not touch your files. Use this to learn.
-   - **Agent** (or **Edit**, if that's what your menu shows) — Copilot edits files for
-     you. Use this to make changes.
+   - **Agent** — Copilot edits files for you. Use this to make changes.
 
 ### Asking Copilot to make a change
 
@@ -301,7 +328,7 @@ applies to changes Copilot makes, too.
   HokieAI is available to all VT students at [hokieai.vt.edu](http://hokieai.vt.edu).
 - **GitHub Docs:** [docs.github.com](https://docs.github.com) has clear walkthroughs
   for everything this template uses, including
-  [github.dev](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)
+  [Codespaces](https://docs.github.com/en/codespaces)
   and [GitHub Copilot](https://docs.github.com/en/copilot).
 - **In class:** All the stuff we have already covered about working in GitHub.
 - **Office hours:** LAHSB 013. Come with your laptop and your specific question.

@@ -2,7 +2,6 @@
 title: "PR Campaign Plan: Repositioning a Local Nonprofit's Volunteer Program"
 excerpt: "A team-authored strategic public relations campaign plan, developed for a real nonprofit client."
 collection: portfolio
-category: junior
 course: "CMST 4544: Public Relations Campaigns"
 term: "Spring 2026"
 date: 2026-04-24
@@ -22,6 +21,11 @@ executive director
 strategy sections
 
 ---
+
+<!-- IMAGE EXAMPLE 2: a Markdown image with a caption.
+     Put an italic line directly under the image to use as a caption and photo credit. -->
+![Volunteers unloading boxes of food donations](https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1200&q=80)
+*Volunteers at a food distribution event. Stock photo via [Unsplash](https://unsplash.com).*
 
 ## Situation analysis (my section, condensed)
 

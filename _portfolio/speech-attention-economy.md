@@ -2,7 +2,6 @@
 title: "Informative Speech: Who Owns Your Attention?"
 excerpt: "A first-year informative speech on algorithmic feeds, delivered in my introductory public speaking course."
 collection: portfolio
-category: freshman
 course: "CMST 1016: Introduction to Public Speaking"
 term: "Fall 2023"
 date: 2023-10-12
@@ -18,6 +17,11 @@ date: 2023-10-12
 **Audience:** CMST 1016 classmates and instructor
 
 ---
+
+<!-- IMAGE EXAMPLE 1: the basic Markdown image.
+     Format: ![description of the image](address of the image)
+     The text in [ ] is alt text — what a screen reader says aloud. Always describe the image. -->
+![A microphone on a stand in front of a blurred audience](https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80)
 
 ## Outline (excerpt)
 

@@ -180,7 +180,7 @@ edits to your files for you.
    - *"In `_config.yml`, change the author name to Jordan Lee and the email to
      jlee@vt.edu. Don't change anything else."*
    - *"Create a new file in `_portfolio/` for my COMM 2034 research paper, using an
-     existing `_portfolio/` file as a model. Category junior, term Spring 2025. Leave the
+     existing `_portfolio/` file as a model. Term Spring 2025. Leave the
      body text as placeholder headings I'll fill in."*
    - *"The sidebar isn't showing my LinkedIn link. Look at `_config.yml` and tell me
      why."*
@@ -222,18 +222,43 @@ spanning freshman year through this semester's CMST 4714 projects. Each file's f
 matter includes:
 
 ```yaml
-category: freshman   # freshman, sophomore, junior, or senior — controls grouping
 course: "CMST 1016: Introduction to Public Speaking"
 term: "Fall 2023"
 date: 2023-10-12
 ```
 
-The Portfolio page automatically groups entries by `category` (using the labels defined
-under `portfolio_category` in `_config.yml`) and sorts each group by `date`. You do not
-need to keep exactly eight files or exactly Robin's courses — add, remove, or rename
-files to match your own coursework, but keep at least one sample from CMST 4714 and, if
-you have them, samples from earlier courses so your portfolio reflects your whole time
-at Virginia Tech, not just this semester.
+The Portfolio page lists every entry in one list, **newest first**, based on `date`. You
+do not need to keep exactly eight files or exactly Robin's courses — add, remove, or
+rename files to match your own coursework, but keep at least one sample from CMST 4714
+and, if you have them, samples from earlier courses so your portfolio reflects your
+whole time at Virginia Tech, not just this semester.
+
+### Adding images to a portfolio entry
+
+Four of Robin's entries include a stock photo, each showing a different way to add an
+image. Open these files to see the code (each one has a comment explaining it):
+
+| File | Shows how to |
+|------|--------------|
+| `_portfolio/speech-attention-economy.md` | Add a basic image |
+| `_portfolio/pr-campaign-plan.md` | Add an image with a caption |
+| `_portfolio/organizational-comm-audit.md` | Add an image with a styled caption (HTML) |
+| `_portfolio/intentio-algorithmi-presentation.md` | Make an image smaller and centered |
+
+The basic format is:
+
+```markdown
+![Description of the image](address-of-the-image)
+```
+
+- **Your own image** (a screenshot, a slide, a photo): upload it to the `images/`
+  folder, then use `/images/your-file-name.jpg` as the address.
+- **An image from the web:** use its full address, starting with `https://`. Only use
+  images you have the right to use, such as free stock photos from
+  [Unsplash](https://unsplash.com) or [Pexels](https://www.pexels.com), and credit the
+  source in a caption.
+- **Always fill in the description** in the square brackets. Screen readers read it
+  aloud to people who can't see the image.
 
 ### Editing `_config.yml`
 

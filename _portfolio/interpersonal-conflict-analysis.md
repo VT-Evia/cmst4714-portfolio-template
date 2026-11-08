@@ -2,7 +2,6 @@
 title: "Conflict Style Analysis: A Case Study from My First Campus Job"
 excerpt: "An applied paper analyzing a real workplace conflict through interpersonal communication theory."
 collection: portfolio
-category: freshman
 course: "CMST 2074: Interpersonal Communication"
 term: "Spring 2024"
 date: 2024-04-15

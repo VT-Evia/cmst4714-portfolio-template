@@ -2,7 +2,6 @@
 title: "Internal Communication Audit: Roanoke Valley Marketing Group"
 excerpt: "A case-study audit of an agency's internal rollout of AI drafting tools, written for my organizational communication course."
 collection: portfolio
-category: junior
 course: "CMST 3614: Organizational Communication"
 term: "Fall 2025"
 date: 2025-10-30
@@ -21,6 +20,13 @@ prior summer
 supervisor at her request
 
 ---
+
+<!-- IMAGE EXAMPLE 3: an HTML figure with a real caption.
+     You can mix HTML into Markdown. <figure> + <figcaption> gives a styled caption. -->
+<figure>
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80" alt="A team gathered around a wall of sticky notes during a workshop">
+  <figcaption>The kind of feedback session the agency skipped. Stock photo via <a href="https://unsplash.com">Unsplash</a>.</figcaption>
+</figure>
 
 ## Summary
 

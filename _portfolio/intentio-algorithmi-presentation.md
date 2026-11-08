@@ -2,7 +2,6 @@
 title: "Intentio Algorithmi Framework Presentation: Recommendation Engines and the Displaced Reader"
 excerpt: "A Marp presentation applying the four-intention framework to streaming recommendation systems."
 collection: portfolio
-category: senior
 course: "CMST 4714: The Human Communicator in an Era of AI"
 term: "Fall 2026"
 date: 2026-10-28
@@ -19,6 +18,10 @@ date: 2026-10-28
 **Slides:** [View presentation](https://robinhokie.github.io/cmst4714-portfolio/slides/intentio-presentation.html)
 
 ---
+
+<!-- IMAGE EXAMPLE 4: a smaller, centered image.
+     Use an HTML <img> tag when you want to control the size. width="60%" = 60% of the page width. -->
+<img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80" alt="An audience seated in a dark auditorium facing a stage" width="60%" class="align-center">
 
 ## Summary
 

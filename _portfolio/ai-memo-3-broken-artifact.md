@@ -2,7 +2,6 @@
 title: "AI Analysis Memo 3: Broken Artifact Diagnosis"
 excerpt: "A professional memo diagnosing an AI-generated crisis communication failure using encoding/decoding and intentio algorithmi."
 collection: portfolio
-category: senior
 course: "CMST 4714: The Human Communicator in an Era of AI"
 term: "Fall 2026"
 date: 2026-11-04

@@ -2,7 +2,6 @@
 title: "AI Analysis Memo 1: What a Human Communicator Brings"
 excerpt: "A landscape analysis memo making the case for the human communicator in an AI-shaped hiring market."
 collection: portfolio
-category: senior
 course: "CMST 4714: The Human Communicator in an Era of AI"
 term: "Fall 2026"
 date: 2026-09-02

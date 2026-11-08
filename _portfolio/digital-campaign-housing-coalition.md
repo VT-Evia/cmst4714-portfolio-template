@@ -2,7 +2,6 @@
 title: "Digital Campaign Plan: Blacksburg Housing Equity Coalition"
 excerpt: "A social media content campaign built for a real nonprofit client in my digital media writing course."
 collection: portfolio
-category: sophomore
 course: "CMST 3054: Digital Media Writing"
 term: "Fall 2024"
 date: 2024-11-20
